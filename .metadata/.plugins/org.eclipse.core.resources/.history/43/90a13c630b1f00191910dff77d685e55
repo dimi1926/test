@@ -1,0 +1,24 @@
+package fr.test;
+
+public class Node {
+
+	Node left, right;
+	int value;
+
+	public Node find(int v) {
+		Node node = this;
+
+		while (node != null && node.value != v) {
+			if (v < node.value) {
+				node = node.left;
+			} else
+				node = node.right;
+		}
+		return node;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package fr.test;
+
+import java.awt.List;
+import java.util.Arrays;
+
+public class Node {
+
+	Node left, right;
+	int value;
+
+	public Node find(int v) {
+		Node node = this;
+
+		while (node != null && node.value != v) {
+			if (v < node.value) {
+				node = node.left;
+			} else
+				node = node.right;
+		}
+		return node;
+	}
+
+	public static void main(String[] args) {
+
+		Integer[] arr = { 1, 1, 1 };
+		List list= Arrays.asList(arr);
+	}
+
+}

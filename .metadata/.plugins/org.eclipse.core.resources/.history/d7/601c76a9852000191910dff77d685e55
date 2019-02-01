@@ -1,0 +1,26 @@
+package fr.test;
+
+import java.util.Arrays;
+import java.util.Comparator;
+
+public class Compare {
+	final static Integer[] numbers = { 1, 4, 3, 4, 2, 6 };
+	final static Integer[] colors = { 0x50, 0x34, 0x00, 0xfe, 0xff, 0xff };
+	static Integer[] sortOrder = new Integer[numbers.length];
+
+	
+
+	public static void main(String[] args) {
+		Compare compare = new Compare();
+		Arrays.sort(sortOrder,new Comparator<Integer>() {
+
+			public int compare(Integer arg0, Integer arg1) {
+				public int compare(Integer a, Integer b) {
+					return numbers[b] - numbers[a];
+				}
+			}   
+            
+            });
+	}
+
+}

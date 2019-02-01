@@ -1,0 +1,24 @@
+package fr.test;
+
+public class Test444 {
+
+	public class Element {
+		
+
+	}
+
+	public class Chain {
+		
+	}
+
+	public static void main(String[] args) {
+		Chain chain = new Chain();
+		Element first = new Element();
+		chain.setFirst(first);
+		Element element = chain.getFirst();
+
+		element.remove();
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package fr.test;
+
+public class TabChecker {
+int row ;
+int height;
+boolean[] bool ;
+//new boolean[] { false, false, false, false, false, false };
+public TabChecker(int row, int height, boolean[] bool) {
+	super();
+	this.row = row;
+	this.height = height;
+	this.bool = bool;
+}
+
+
+}
+

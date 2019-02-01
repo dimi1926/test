@@ -1,0 +1,42 @@
+package fr.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Chain {
+
+	List<Element> listeElements = new ArrayList();
+
+	Chain remove(Element el) {
+		Chain parent = null;
+		
+		if (el != null) {
+			
+			if (!el.equals(el.getParent().getListeElements().get(0))) {
+				
+				parent= el.getParent();
+				parent=null;
+				Element elnext = el.getNext();
+				elnext=null;
+				Element elprev = el.getPrev();
+				elprev=null;
+				
+				
+			}
+				
+		}
+		return parent;
+	}
+
+	public Chain() {
+	}
+
+	public List<Element> getListeElements() {
+		return listeElements;
+	}
+
+	public void setListeElements(List<Element> listeElements) {
+		this.listeElements = listeElements;
+	}
+
+}

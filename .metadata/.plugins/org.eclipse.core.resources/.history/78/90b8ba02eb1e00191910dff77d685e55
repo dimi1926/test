@@ -1,0 +1,21 @@
+package fr.test;
+
+public class Test {
+
+	static int count(int n) {
+		int i;
+		int result = 1;
+		if (n >= 0) {
+			for (i = n; i > 1; i--) {
+				result = result * i;
+			}
+			return result;
+		}
+		return 0;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

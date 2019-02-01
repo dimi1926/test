@@ -1,0 +1,45 @@
+package fr.test;
+
+public class TabChecker  implements ITabChecker{
+int row ;
+int colonne;
+boolean[][] bool ;
+//new boolean[] { false, false, false, false, false, false };
+public int getRow() {
+	return row;
+}
+public void setRow(int row) {
+	this.row = row;
+}
+public int getHeight() {
+	return colonne;
+}
+public void setHeight(int height) {
+	this.colonne = height;
+}
+public boolean[][] getBool() {
+	return bool;
+}
+public void setBool(boolean[][] bool) {
+	this.bool = bool;
+}
+public TabChecker(int row, int height, boolean[][] bool) {
+	super();
+	this.row = row;
+	this.colonne = height;
+	this.bool = bool;
+}
+public int getWidth() {
+	// TODO Auto-generated method stub
+	return h;
+}
+public boolean isCheckedCell(int x, int y) {
+	// TODO Auto-generated method stub
+	return true;
+}
+
+
+
+
+}
+

@@ -1,0 +1,22 @@
+package fr.test;
+
+public class SolutionS {
+
+	public static int findMaxHeight(final ITabChecker tab) {
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		
+		final ITabChecker testTab = new TabChecker(6, 4,
+				new boolean[][] { new boolean[] { false, false, false, false, false, false },
+						new boolean[] { false, false, false, false, false, true },
+						new boolean[] { false, true, false, false, false, true },
+						new boolean[] { true, true, false, true, true, true } });
+		final int maxHeight = SolutionS.findMaxHeight(testTab);
+		System.out.println("Hauteur max : " + maxHeight);
+
+	}
+
+}

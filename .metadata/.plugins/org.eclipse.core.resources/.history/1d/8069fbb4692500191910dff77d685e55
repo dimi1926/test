@@ -1,0 +1,31 @@
+package fr.test;
+
+public class TabChecker {
+int row ;
+int height;
+boolean[] bool ;
+//new boolean[] { false, false, false, false, false, false };
+public int getRow() {
+	return row;
+}
+public void setRow(int row) {
+	this.row = row;
+}
+public int getHeight() {
+	return height;
+}
+public void setHeight(int height) {
+	this.height = height;
+}
+public TabChecker(int row, int height, boolean[][] bs) {
+	super();
+	this.row = row;
+	this.height = height;
+	this.bool = bs;
+}
+
+
+
+
+}
+

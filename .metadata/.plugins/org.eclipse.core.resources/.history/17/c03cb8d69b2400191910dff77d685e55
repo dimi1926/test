@@ -1,0 +1,54 @@
+package fr.test;
+
+public class Element {
+	Chain parent; // liste à laquelle appartient l’élément
+	Element prev; // élément précédant dans la chaîne
+	Element next; // élément suivant dans la chaîne
+
+	 void remove() {
+		Chain parent = null;
+		
+		if (this.getClass())
+		if (el != null) {
+			
+			if (!el.equals(el.getParent().getListeElements().get(0))) {
+				
+				parent= el.getParent();
+				parent=null;
+				Element elnext = el.getNext();
+				elnext=null;
+				Element elprev = el.getPrev();
+				elprev=null;
+				
+				
+			}
+				
+		}
+
+	}
+
+
+	public Chain getParent() {
+		return parent;
+	}
+
+	public void setParent(Chain parent) {
+		this.parent = parent;
+	}
+
+	public Element getPrev() {
+		return prev;
+	}
+
+	public void setPrev(Element prev) {
+		this.prev = prev;
+	}
+
+	public Element getNext() {
+		return next;
+	}
+
+	public void setNext(Element next) {
+		this.next = next;
+	}
+}

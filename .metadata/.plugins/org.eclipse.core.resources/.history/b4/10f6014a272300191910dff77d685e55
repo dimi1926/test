@@ -1,0 +1,86 @@
+package fr.test;
+
+public class Test444 {
+
+	public class Element {
+		Chain parent; // liste à laquelle appartient l’élément
+		Element prev; // élément précédant dans la chaîne
+		Element next; // élément suivant dans la chaîne
+
+		public Chain getParent() {
+			return parent;
+		}
+
+		public void setParent(Chain parent) {
+			this.parent = parent;
+		}
+
+		public Element getPrev() {
+			return prev;
+		}
+
+		public void setPrev(Element prev) {
+			this.prev = prev;
+		}
+
+		public Element getNext() {
+			return next;
+		}
+
+		public void setNext(Element next) {
+			this.next = next;
+		}
+
+	}
+
+	public class Chain {
+		Element first; // premier élément de la liste
+		Element last; // dernier élément de la liste
+		// methodes ici
+		void Chain
+
+		remove(Element el) {
+       	 
+	          this.prev=null;
+	          this.next=null;
+	          this.parent=null;
+	          return 
+	          }
+
+		public Chain(Element first, Element last) {
+			this.first = first;
+			this.last = last;
+		}
+
+		public Chain() {
+		}
+
+		public Element getFirst() {
+			return first;
+		}
+
+		public void setFirst(Element first) {
+			this.first = first;
+		}
+
+		public Element getLast() {
+			return last;
+		}
+
+		public void setLast(Element last) {
+			this.last = last;
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Chain chain = new Chain();
+		Element first = new Element();
+		chain.setFirst(first);
+		Element element = chain.getFirst();
+
+		element.remove();
+
+	}
+
+}

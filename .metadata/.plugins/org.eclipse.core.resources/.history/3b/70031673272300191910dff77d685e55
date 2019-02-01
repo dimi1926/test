@@ -1,0 +1,39 @@
+package fr.test;
+
+import fr.test.Test444.Element;
+
+public class Chain {
+	Element first; // premier élément de la liste
+	Element last; // dernier élément de la liste
+	// methodes ici
+
+	Chain remove(Element el) {
+
+		return null;
+	}
+
+	public Chain(Element first, Element last) {
+		this.first = first;
+		this.last = last;
+	}
+
+	public Chain() {
+	}
+
+	public Element getFirst() {
+		return first;
+	}
+
+	public void setFirst(Element first) {
+		this.first = first;
+	}
+
+	public Element getLast() {
+		return last;
+	}
+
+	public void setLast(Element last) {
+		this.last = last;
+	}
+
+}

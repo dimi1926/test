@@ -1,0 +1,28 @@
+package fr.test;
+
+public class Test444 {
+
+	public  class Element {
+		Chain parent; // liste à laquelle appartient l’élément
+		Element prev; // élément précédant dans la chaîne
+		Element next; // élément suivant dans la chaîne
+	 	
+	         void remove() {
+	          this.prev=null;
+	          this.next=null;
+	          this.parent=null;
+
+	          }
+
+
+	}
+	
+	public class Chain {
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

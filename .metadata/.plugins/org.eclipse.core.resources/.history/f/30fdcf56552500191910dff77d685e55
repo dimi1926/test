@@ -1,0 +1,45 @@
+package fr.test;
+
+public class Change {
+	long piece2 = 0;
+    long billet5 = 0;
+    long billet10 = 0;
+    
+	static Change optimalChange(long s) {
+	    long change = s;
+	    Change c = new Change();
+	    if (change >=10) {
+	        if (change % 2 != 0 && change % 5 !=0) {
+	            return dealWithChangeLike31Euros(change);
+	        }
+	        else {
+	            c.billet10 = (long) change / 10;
+	            change = change % c.billet10;
+	        }
+	    }
+
+	    if (change <10 && change >=5) {
+	        if (change % 2 == 0) {
+	            c.billet5 = 0;
+	            c.piece2 = change/2;
+	        }
+	        else {
+	            change = change - 5;
+	            c.billet5 = 1;
+	        }
+	    }
+
+	    else if (change %2 ==0) {
+	        c.billet5 = 0;
+	        c.piece2 = change/2;
+	    } else {
+	        return null;
+	    }
+	    return c;
+	}
+	
+	public static void main(String[] args) {
+
+	}
+
+}

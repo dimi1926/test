@@ -1,0 +1,13 @@
+package fr.test;
+
+public class Test3 {
+	
+	public static int calc(int[] array, int n1, int n2) {
+		return null;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

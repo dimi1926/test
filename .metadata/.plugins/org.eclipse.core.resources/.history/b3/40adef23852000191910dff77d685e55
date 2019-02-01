@@ -1,0 +1,15 @@
+package fr.test;
+
+public class Compare {
+	final Integer[] numbers = {1,4,3,4,2,6};
+    final Integer[] colors  = {0x50,0x34,0x00,0xfe,0xff,0xff};
+    Integer[] sortOrder = new Integer[numbers.length];
+	public int compare(Integer a, Integer b){
+        return numbers[b]-numbers[a];
+    }
+	public static void main(String[] args) {
+
+		
+	}
+
+}

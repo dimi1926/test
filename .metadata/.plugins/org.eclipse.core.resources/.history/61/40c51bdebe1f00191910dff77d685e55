@@ -1,0 +1,33 @@
+package fr.test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Node {
+
+	Node left, right;
+	int value;
+
+	public Node find(int v) {
+		Node node = this;
+
+		while (node != null && node.value != v) {
+			if (v < node.value) {
+				node = node.left;
+			} else
+				node = node.right;
+		}
+		return node;
+	}
+
+	public static void main(String[] args) {
+
+		Integer[] arr = { 1, 2, 3 };
+		ArrayList list =  (ArrayList) Arrays.asList(arr);
+		ArrayList list2;
+		list2.add(1);
+		
+		list.retainAll(arg0)
+	}
+
+}

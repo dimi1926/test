@@ -1,0 +1,18 @@
+package fr.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Chain {
+
+	List<Element> listeElements = new ArrayList();
+
+	// methodes ici
+
+	
+	public Chain() {
+	}
+
+	
+
+}

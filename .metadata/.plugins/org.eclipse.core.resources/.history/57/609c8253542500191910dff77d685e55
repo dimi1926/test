@@ -1,0 +1,55 @@
+package fr.test;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Solution {
+
+	static final String TEST = "I want to be a jumbers";
+
+	public static void main(String[] args) {
+		Solution test = new Solution();
+		List<Character> result = test.maxOccurrencesCharsSansEspaces(TEST, true);
+		System.out.println(result);
+	}
+
+	public List<Character> maxOccurences(String string) {
+		return maxOccurrencesCharsSansEspaces(string, false);
+	}
+
+	// set skipSpaces true if you want to skip spaces
+	public List<Character> maxOccurrencesCharsSansEspaces(String str, Boolean estUnSpace) {
+		Map<Character, Integer> map = new HashMap();
+		List<Character> occurrences = new ArrayList();
+		int maxOccurring = 0;
+
+		// creates map of all characters
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+
+			if (estUnSpace && ch == ' ') // skips spaces if needed
+				continue;
+
+			if (map.containsKey(ch)) {
+				map.put(ch, map.get(ch) + 1);
+			} else {
+				map.put(ch, 1);
+			}
+
+			if (map.get(ch) > maxOccurring) {
+				maxOccurring = map.get(ch); // saves max occurring
+			}
+		}
+
+		// finds all characters with maxOccurring and adds it to occurrences List
+		for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+			if (entry.getValue() == maxOccurring) {
+				occurrences.add(entry.getKey());
+			}
+		}
+
+		return occurrences;
+	}
+}

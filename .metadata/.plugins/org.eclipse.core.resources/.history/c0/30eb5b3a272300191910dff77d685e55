@@ -1,0 +1,42 @@
+package fr.test;
+//Java program to illustrate the 
+//concept of single inheritance 
+import java.util.*; 
+import java.lang.*; 
+import java.io.*; 
+
+class Car 
+{ 
+	public void print_geek() 
+	{ 
+		System.out.println("Geeks"); 
+	} 
+	Bmw bmw;
+	public Car(Bmw bmw) {
+		super();
+		this.bmw = bmw;
+	}
+	
+	
+} 
+
+class Bmw extends Car 
+{ 
+	
+	
+	public void print_for() 
+	{ 
+		System.out.println("for"); 
+	} 
+} 
+//Driver class 
+public class Main 
+{ 
+	public static void main(String[] args) 
+	{ 
+		Bmw g = new Bmw(); 
+		g.print_geek(); 
+		g.print_for(); 
+		g.print_geek(); 
+	} 
+} 

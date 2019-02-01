@@ -1,0 +1,11 @@
+package fr.test;
+
+public class TabChecker {
+int row ;
+int height;
+boolean[] bool = new boolean[] { false, false, false, false, false, false },
+new boolean[] { false, false, false, false, false, true },
+new boolean[] { false, true, false, false, false, true },
+new boolean[] { true, true, false, true, true, true } };
+}
+
